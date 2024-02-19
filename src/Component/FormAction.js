@@ -9,10 +9,25 @@ const FormAction = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(nameRef.current.value);
+    if(nameRef.current.value===""){
+      alert("Please fill the details")
+    }
+    if(ageRef.current.value === ""){
+      alert("Please fill the details")
+    }
+    if(addressRef.current.value === ""){
+      alert("Please fill the details")
+    }
+    if(!(emailRef.current.value.includes("@"))){
+      alert("Please enter the valid email")
+    }
+    else{
+      console.log(nameRef.current.value);
     console.log(ageRef.current.value);
     console.log(addressRef.current.value);
     console.log(emailRef.current.value);
+
+    }
   }
 
   
