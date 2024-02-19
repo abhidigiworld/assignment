@@ -9,6 +9,10 @@ const FormAction = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(nameRef.current.value);
+    console.log(ageRef.current.value);
+    console.log(addressRef.current.value);
+    console.log(emailRef.current.value);
   }
 
   
